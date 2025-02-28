@@ -33,6 +33,10 @@ a {
   text-decoration: none;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
@@ -160,10 +164,12 @@ header {
 }
 
 .logo {
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 .logo img {
+  width: 80px;
   height: 80px;
 }
 
@@ -301,7 +307,8 @@ header {
   position: relative;
 }
 
-.shape-bg {
+.shape-bg,
+.shape-bg-primary {
   position: absolute;
   top: -20px;
   left: -20px;
@@ -310,6 +317,10 @@ header {
   background-color: var(--secondary-color);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   z-index: -1;
+}
+
+.shape-bg-primary {
+  background-color: var(--primary-color);
 }
 
 .hero-image img {
@@ -1270,17 +1281,4 @@ img.lazy-load.loaded {
 
 .cliente-logo:hover {
   transform: translateY(-5px);
-}
-
-@keyframes carousel {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-30%);
-  }
-}
-
-.clientes-carousel:hover .clientes-slider {
-  animation-play-state: paused;
 }

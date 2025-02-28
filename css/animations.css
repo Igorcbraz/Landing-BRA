@@ -1,0 +1,42 @@
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.count-animate {
+  display: inline-block;
+  opacity: 0;
+}
+
+.count-animate.visible {
+  opacity: 1;
+  animation: countUp 0.8s ease forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.clientes-carousel:hover .clientes-slider {
+  animation-play-state: paused;
+}

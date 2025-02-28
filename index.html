@@ -29,6 +29,8 @@
 
     <link rel="canonical" href="https://www.braservicosambientais.com.br">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -70,20 +72,24 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>Soluções <span class="text-primary">Sustentáveis</span> para um futuro melhor</h1>
-          <p>Serviços ambientais com compromisso, qualidade e responsabilidade socioambiental</p>
-          <a href="#contato" class="btn primary-btn">
+          <h1 data-aos="fade-down" data-aos-duration="1200" data-aos-delay="300">
+            Soluções <span class="text-primary" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">Sustentáveis</span> para um futuro melhor
+          </h1>
+          <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1200">
+            Serviços ambientais com compromisso, qualidade e responsabilidade socioambiental
+          </p>
+          <a href="#contato" class="btn primary-btn" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="900">
             Solicite um Orçamento
             <i class="fas fa-chevron-right"></i>
           </a>
         </div>
-        <div class="hero-image">
-          <div class="shape-bg"></div>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
+          <div class="shape-bg" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="800"></div>
           <img src="./public/hero-image.jpg" alt="Serviço Ambiental com a equipe BRA ao centro">
         </div>
       </div>
     </section>
-    <section id="clientes" class="clientes">
+    <section id="clientes" class="clientes" data-aos="flip-up">
       <div class="carousel-container">
         <div class="carousel-mask-left"></div>
         <div class="clientes-carousel">
@@ -107,16 +113,15 @@
     </section>
     <section id="sobre" class="sobre">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2>Quem Somos</h2>
           <div class="separator"></div>
         </div>
         <div class="sobre-content">
-          <div class="sobre-image">
-            <div class="shape-bg"></div>
+          <div class="sobre-image" data-aos="fade-right" data-aos-delay="200">
             <img src="./public/about.jpg" alt="BRA realizando a medição de uma muda">
           </div>
-          <div class="sobre-text">
+          <div class="sobre-text" data-aos="fade-left" data-aos-delay="400">
             <h3>BRA Soluções em Serviços Ambientais</h3>
             <p>Somos uma empresa especializada em serviços ambientais, comprometida em fornecer soluções sustentáveis e inovadoras para empresas e comunidades.</p>
             <p>Nossa missão é oferecer serviços de qualidade a um preço justo, gerando valor para clientes, colaboradores, comunidade, fornecedores e o meio ambiente, por meio de uma gestão sustentável.</p>
@@ -148,11 +153,11 @@
     </section>
     <section id="servicos" class="servicos">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2>Nossos Serviços</h2>
           <div class="separator"></div>
         </div>
-        <div class="servicos-grid">
+        <div class="servicos-grid" data-aos="fade-up" data-aos-delay="200">
           <div class="servico-card hover-effect">
             <div class="icon">
               <i class="fas fa-leaf"></i>
@@ -200,16 +205,15 @@
     </section>
     <section id="vantagens" class="vantagens">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2>Nossas Vantagens</h2>
           <div class="separator"></div>
         </div>
         <div class="vantagens-content">
-          <div class="vantagens-image">
-            <div class="shape-bg"></div>
+          <div class="vantagens-image" data-aos="fade-right" data-aos-delay="200">
             <img src="./public/benefits.jpg" alt="Equipe BRA em ação">
           </div>
-          <div class="vantagens-list">
+          <div class="vantagens-list" data-aos="fade-left" data-aos-delay="400">
             <div class="vantagem-item">
               <div class="vantagem-icon-primary">
                 <i class="fas fa-check"></i>
@@ -252,11 +256,11 @@
     </section>
     <section id="depoimentos" class="depoimentos">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2>Depoimentos de Clientes</h2>
           <div class="separator"></div>
         </div>
-        <div class="depoimentos-slider">
+        <div class="depoimentos-slider" data-aos="fade-up" data-aos-delay="200">
           <div class="depoimento-card">
             <div class="depoimento-text">
               <p>"A BRA Serviços Ambientais foi fundamental para nossa empresa obter o licenciamento ambiental necessário para expandir nossas operações. Profissionalismo e eficiência em todas as etapas do processo."</p>
@@ -309,12 +313,12 @@
     </section>
     <section id="contato" class="contato">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2>Entre em Contato</h2>
           <div class="separator"></div>
         </div>
         <div class="contato-content">
-          <div class="contato-info">
+          <div class="contato-info" data-aos="fade-right" data-aos-delay="200">
             <h3>Vamos Conversar</h3>
             <p>Preencha o formulário ou utilize um dos canais abaixo para entrar em contato conosco. Teremos prazer em atendê-lo e esclarecer suas dúvidas.</p>
             <div class="contato-item">
@@ -356,7 +360,7 @@
               </a>
             </div>
           </div>
-          <div class="contato-form">
+          <div class="contato-form" data-aos="fade-left" data-aos-delay="400">
             <form id="contactForm" name="contact" action="/pages/success-form/" method="POST" netlify netlify-honeypot="bot-field">
               <div class="hidden">
                 <label for="bot-field">Don’t fill this out if you’re human</label>
@@ -399,7 +403,7 @@
       <div class="footer-top">
         <div class="container">
           <div class="footer-content">
-            <section class="footer-brand">
+            <section class="footer-brand" data-aos="fade-right" data-aos-delay="400">
               <div class="footer-logo">
                 <img src="./public/logo.png" alt="BRA Soluções em Serviços Ambientais">
               </div>
@@ -419,8 +423,8 @@
             
             <nav class="footer-nav">
               <section class="footer-col">
-                <h4 class="footer-title">Empresa</h4>
-                <ul>
+                <h4 class="footer-title" data-aos="fade-up">Empresa</h4>
+                <ul data-aos="fade-up" data-aos-delay="200">
                   <li><a href="#sobre">Sobre Nós</a></li>
                   <li><a href="#clientes">Clientes</a></li>
                   <li><a href="#servicos">Nossos Serviços</a></li>
@@ -431,8 +435,8 @@
               </section>
               
               <section class="footer-col">
-                <h4 class="footer-title">Serviços</h4>
-                <ul>
+                <h4 class="footer-title" data-aos="fade-up">Serviços</h4>
+                <ul data-aos="fade-up" data-aos-delay="200">
                   <li><a href="#servicos">Licenciamento Ambiental</a></li>
                   <li><a href="#servicos">Gestão de Resíduos</a></li>
                   <li><a href="#servicos">Recuperação de Áreas</a></li>
@@ -442,8 +446,8 @@
               </section>
               
               <section class="footer-col">
-                <h4 class="footer-title">Contato</h4>
-                <ul class="contact-info">
+                <h4 class="footer-title" data-aos="fade-up">Contato</h4>
+                <ul data-aos="fade-up" data-aos-delay="200" class="contact-info">
                   <li>
                     <i class="fas fa-phone" aria-hidden="true"></i>
                     <a href="tel:+551198765432">(11) 93449-2385</a>
@@ -471,6 +475,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.8/dist/countUp.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/animations.js"></script>
   </body>
 </html>
